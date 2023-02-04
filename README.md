@@ -1,5 +1,8 @@
 # Macbook-Notes
 
+## Install
+Option+Power
+
 ## Wireless
 ```
 $ lspci | grep -i network
