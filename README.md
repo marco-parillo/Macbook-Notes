@@ -3,6 +3,14 @@
 ## Install
 Option+Power
 
+## Disks
+```
+Device             Start       End   Sectors   Size Type
+/dev/nvme0n1p1       512     77311     76800   300M EFI System
+/dev/nvme0n1p2     77312 117649540 117572229 448.5G Linux filesystem
+/dev/nvme0n1p3 117649541 122126129   4476589  17.1G Linux swap
+```
+
 ## Wireless
 ```
 $ lspci | grep -i network
