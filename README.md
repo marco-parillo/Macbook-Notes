@@ -34,3 +34,7 @@ $ lspci | grep -i network
 * Manufacturer: Apple Inc.
 * Product Name: MacBookPro14,3
 * System Version: 1.0
+
+## MacOS Screenshots
+* Cmd+Shift+4 — Select an area, saves to desktop
+* Cmd+Ctrl+Shift+4 — Select an area, copies to clipboard — my favorite!
