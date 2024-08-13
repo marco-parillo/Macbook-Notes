@@ -16,6 +16,7 @@ Device             Start       End   Sectors   Size Type
 $ lspci | grep -i network
 03:00.0 Network controller: Broadcom Inc. and subsidiaries BCM43602 802.11ac Wireless LAN SoC (rev 02)
 ```
+Try installing the [broadcom-wl](https://archlinux.org/packages/extra/x86_64/broadcom-wl/)?
 
 ## Links
 * https://github.com/Dunedan/mbp-2016-linux
