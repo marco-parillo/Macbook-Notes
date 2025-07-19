@@ -17,6 +17,19 @@ $ lspci | grep -i network
 03:00.0 Network controller: Broadcom Inc. and subsidiaries BCM43602 802.11ac Wireless LAN SoC (rev 02)
 ```
 
+BCM43602 needs the brcmfmac.feature_disable=0x82000 kernel parameter as tested with PCI Device ID 14e4:43ba (see BBS#298025).
+```
+cat /boot/loader/entries/2023-02-24_00-11-00_linux.conf 
+# Created by: archinstall
+# Created on: 2023-02-24_00-11-00
+title Arch Linux (linux)
+linux /vmlinuz-linux
+initrd /intel-ucode.img
+initrd /initramfs-linux.img
+options root=PARTUUID=7473a00c-41ec-4579-b9d3-40762bab0c66 zswap.enabled=0 rw intel_pstate=no_hwp rootfstype=ext4 brcmfmac.feature_disable=0x82000
+
+```
+
 [Source](https://wiki.archlinux.org/title/Broadcom_wireless#BCM43602_802.11ac_Wireless_LAN_SoC).
 ## Links
 * https://github.com/Dunedan/mbp-2016-linux
